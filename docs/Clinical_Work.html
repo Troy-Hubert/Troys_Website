@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Clinical Work</title>
+
+<script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Troy's Site</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Troy Hubert</a>
+</li>
+<li>
+  <a href="Code.html">Code</a>
+</li>
+<li>
+  <a href="Research.html">Research</a>
+</li>
+<li>
+  <a href="Clinical_Work.html">Clinical Work</a>
+</li>
+<li>
+  <a href="Art.html">Art</a>
+</li>
+<li>
+  <a href="Contact.html">Contact</a>
+</li>
+<li>
+  <a href="CV.html">CV</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Clinical Work</h1>
+
+</div>
+
+
+<p>I currently am getting broad training psychotherapy for emotional
+disorders (e.g., anxiety disorders, and stressor disorders) substance
+use disorders, and attention deficit hyperactivity disorder (ADHD). The
+sections below show treatments and assessments that I have been trained
+in.</p>
+<div id="evidence-based-treatment" class="section level1">
+<h1>Evidence Based Treatment</h1>
+<div id="cognitive-behavioral-therapy-cbt" class="section level3">
+<h3>1. <a
+href="https://www.apa.org/ptsd-guideline/patients-and-families/cognitive-behavioral">Cognitive
+Behavioral Therapy (CBT)</a></h3>
+<p>CBT is a type of psychotherapy that primarily focuses on the
+thoughts, behaviors, feelings, and physiological sensations involved in
+psychiatric disorders. Interventions target these areas to help reduce
+the impact of psychopathology on patients lives.</p>
+</div>
+<div id="the-unified-protocol-up" class="section level3">
+<h3>2. <a
+href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5710228/">The Unified
+Protocol (UP)</a></h3>
+<p>The UP is a transdiagnostic (i.e., treats anxiety, depression, and
+other disorders) CBT based treatment. Focuses on mindfulness,
+challenging challenging thinking errors (cognitive work), Emotion driven
+behaviors, and exposures to emotions, thoughts, and behaviors driving
+avoidance of emotion.</p>
+</div>
+<div id="cognitive-behavioral-modules-for-personality-symptoms-compass"
+class="section level3">
+<h3>3. <a
+href="https://pubmed.ncbi.nlm.nih.gov/36595435/">Cognitive-behavioral
+Modules for Personality Symptoms (COMPASS)</a></h3>
+<p>COMPASS is a modulized treaatment for personality, which is mainly
+used for borderline personality disorder (BPD). However, Compass may
+also be effective in treating emotional disorders as well. Treatment
+focuses on values of client, skills for improving thinking (cognitions),
+skills for behaviors (emotion driven, relationship, and impulsive), and
+mindfulness.</p>
+</div>
+<div id="cognitive-processing-therapy-cpt" class="section level3">
+<h3>4. <a
+href="https://www.apa.org/ptsd-guideline/treatments/cognitive-processing-therapy">Cognitive
+Processing Therapy (CPT)</a></h3>
+<p>CPT is a treatment for PTSD that focuses on the thoughts and emotions
+that impact peoples lives following trauma. Clients work on thinking
+traps, and thoughts pertaining to their life in response to the trauma.
+Treatment focuses on safety, trust, power, control, esteem and intimacy
+as it pertains to the traumatic experience. CPT can be used with
+exposures, but does not need to have an exposure part of it.</p>
+</div>
+<div id="prolonged-exposure-pe" class="section level3">
+<h3>5. <a
+href="https://www.apa.org/ptsd-guideline/treatments/prolonged-exposure#:~:text=Prolonged%20exposure%20is%20a%20specific,doing%20so%20reinforces%20their%20fear.">Prolonged
+Exposure (PE)</a></h3>
+<p>PE is a psychotherapy that primarily focuses on exposure therapy to
+treat PTSD. Both imaginal and in vivo exposures are used to help client
+overcome avoidance on trauma related stimuli. The aim of exposure
+therapy is to help clients reduce their avoidance and fear over things
+thaat remind them of their trauma, and promoting safety learning (i.e.,
+I am safe in the moment / I am okay dispite what happened in the
+past).</p>
+</div>
+</div>
+<div id="assessment" class="section level1">
+<h1>Assessment</h1>
+<div
+id="diagnostic-interview-for-anxiety-mood-and-ocd-and-related-neuropsychiatric-disorders-diamond"
+class="section level3">
+<h3><a
+href="https://giving.hartfordhospital.org/tolin-diamond-training-video/">Diagnostic
+Interview for Anxiety, Mood, and OCD and Related Neuropsychiatric
+Disorders (DIAMOND)</a></h3>
+<p>The DIAMOND assessment is a psychodiagnostic assessment used to
+diagnosed psychopathology and neuropsychiatric disorders.</p>
+</div>
+<div
+id="schedule-for-affective-disorders-and-schizophrenia-for-school-age-children-k-sads-pl"
+class="section level3">
+<h3><a
+href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2736874/">Schedule
+for Affective Disorders and Schizophrenia for School-Age Children
+(K-SADS-PL)</a></h3>
+<p>The K_SADS is a psychodyagnostic assessment used to diagnose
+psychopathology, neuropsychiatric disordersm, and behavioral disorders
+in children.</p>
+</div>
+<div
+id="the-structured-clinical-interview-for-dsm-5---personality-disorders-scid-5-pd"
+class="section level3">
+<h3><a
+href="https://www.appi.org/products/structured-clinical-interview-for-dsm-5-scid-5">The
+Structured Clinical Interview for DSM-5® - Personality Disorders
+(SCID-5-PD)</a></h3>
+<p>The SCID-5-PD is an psychodiagnostic assessment used to diagnose
+personality disorders according to DSM-5 criteria.</p>
+</div>
+<div id="the-mini-international-neuropsych-interveiw-mini"
+class="section level3">
+<h3><a
+href="https://harmresearch.org/mini-international-neuropsychiatric-interview-mini/">The
+Mini International Neuropsych Interveiw (MINI)</a></h3>
+<p>The MINI is a brief structured diagnostic interview for the major
+psychiatric disorders according to DSM-5 criteria.</p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
